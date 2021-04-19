@@ -6,7 +6,7 @@ public class Usuario {
 	private String rg; 
 	private String email;
 	private String telefone;
-	private String endereço;
+	private String endereco;
 	
 	//getter e setter
 	public void setNome(String nome){
@@ -39,15 +39,15 @@ public class Usuario {
 	public String getTelefone(){		
 		return this.telefone;
 	}
-	public void setEndereço(String endereço){
-		this.endereço = endereço;
+	public void setEndereco(String endereço){
+		this.endereco = endereço;
 	} 
-	public String getEndereço(){		
-		return this.endereço;
+	public String getEndereco(){		
+		return this.endereco;
 	}
 	
 	@Override
 	public String toString() {		
-		return "Nome: " + getNome();
+		return "Nome: "+getNome()+" | CPF: "+getCpf()+" | Rg: "+getRg()+" | E-mail: "+getEmail()+" | Telefone: "+getTelefone()+" | Endereço: "+getEndereco();
 	}
 }
